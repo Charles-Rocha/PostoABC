@@ -28,7 +28,7 @@ begin
     try
       if not FileExists(arqIni) then
       begin
-        result := 'Arquivo vendamais_config.ini não encontrado';
+        result := 'Arquivo postoabc_config.ini não encontrado';
         exit;
       end;
 
