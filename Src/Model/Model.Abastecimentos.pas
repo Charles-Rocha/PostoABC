@@ -67,10 +67,10 @@ begin
       begin
         Active := false;
         SQL.Clear;
-        SQL.Add('SELECT V.ID, V.DATA, V.QTD_LITROS, V.PRECO_COMBUSTIVEL, V.VALOR, V.VALOR_IMPOSTO, ');
-        SQL.Add('V.ID_BOMBA, B.BOMBA, B.ID_TANQUE, T.TANQUE, T.ID_COMBUSTIVEL, C.COMBUSTIVEL ');
-        SQL.Add('FROM ABASTECIMENTOS V ');
-        SQL.Add('INNER JOIN BOMBAS B ON B.ID = V.ID_BOMBA ');
+        SQL.Add('SELECT A.ID, A.DATA, A.QTD_LITROS, A.PRECO_COMBUSTIVEL, A.VALOR, A.VALOR_IMPOSTO, ');
+        SQL.Add('A.ID_BOMBA, B.BOMBA, B.ID_TANQUE, T.TANQUE, T.ID_COMBUSTIVEL, C.COMBUSTIVEL ');
+        SQL.Add('FROM ABASTECIMENTOS A ');
+        SQL.Add('INNER JOIN BOMBAS B ON B.ID = A.ID_BOMBA ');
         SQL.Add('INNER JOIN TANQUES T ON T.ID = B.ID_TANQUE ');
         SQL.Add('INNER JOIN COMBUSTIVEIS C ON C.ID = T.ID_COMBUSTIVEL ');
         SQL.Add('WHERE 1=1');
@@ -102,12 +102,13 @@ begin
         Active := false;
         SQL.Clear;
 
-        SQL.Add('SELECT V.DATA, T.TANQUE, B.BOMBA, V.VALOR ');
-        SQL.Add('FROM ABASTECIMENTOS V ');
-        SQL.Add('INNER JOIN BOMBAS B ON B.ID = V.ID_BOMBA ');
+        SQL.Add('SELECT A.DATA, T.TANQUE, B.BOMBA, SUM(A.VALOR) AS VALOR ');
+        SQL.Add('FROM ABASTECIMENTOS A ');
+        SQL.Add('INNER JOIN BOMBAS B ON B.ID = A.ID_BOMBA ');
         SQL.Add('INNER JOIN TANQUES T ON T.ID = B.ID_TANQUE ');
         SQL.Add('WHERE 1=1 ');
-        SQL.Add('AND V.DATA BETWEEN :Datainicial AND :DataFinal ');
+        SQL.Add('AND A.DATA BETWEEN :Datainicial AND :DataFinal ');
+        SQL.Add('GROUP BY A.DATA, T.TANQUE, B.BOMBA ');
 
         ParamByName('DataInicial').Value := FDataInicial;
         ParamByName('DataFinal').Value := FDataFinal;

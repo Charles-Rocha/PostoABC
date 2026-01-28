@@ -542,7 +542,7 @@ object frmSobre: TfrmSobre
       Top = 336
       Width = 194
       Height = 16
-      Caption = 'Data da cria'#231#227'o: 28/01/2025'
+      Caption = 'Data da cria'#231#227'o: 27/01/2026'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Height = -13

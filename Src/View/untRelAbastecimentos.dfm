@@ -284,9 +284,9 @@ object frmRelAbastecimentos: TfrmRelAbastecimentos
       ParentColor = False
       Transparent = False
       object RLDBText1: TRLDBText
-        Left = 8
+        Left = 29
         Top = 8
-        Width = 80
+        Width = 38
         Height = 16
         Alignment = taCenter
         DataField = 'DATA'
@@ -297,7 +297,7 @@ object frmRelAbastecimentos: TfrmRelAbastecimentos
       object RLDBText2: TRLDBText
         Left = 144
         Top = 8
-        Width = 150
+        Width = 57
         Height = 16
         DataField = 'TANQUE'
         DataSource = frmFiltroRelAbastecimentos.dtsListarAbastecimentosPorDatas
@@ -307,7 +307,7 @@ object frmRelAbastecimentos: TfrmRelAbastecimentos
       object RLDBText3: TRLDBText
         Left = 344
         Top = 8
-        Width = 150
+        Width = 52
         Height = 16
         DataField = 'BOMBA'
         DataSource = frmFiltroRelAbastecimentos.dtsListarAbastecimentosPorDatas
@@ -315,13 +315,14 @@ object frmRelAbastecimentos: TfrmRelAbastecimentos
         Transparent = False
       end
       object RLDBText4: TRLDBText
-        Left = 566
+        Left = 668
         Top = 8
-        Width = 150
+        Width = 48
         Height = 16
         Alignment = taRightJustify
         DataField = 'VALOR'
         DataSource = frmFiltroRelAbastecimentos.dtsListarAbastecimentosPorDatas
+        DisplayMask = '###,###,0.0000'
         Text = ''
         Transparent = False
       end
@@ -348,7 +349,7 @@ object frmRelAbastecimentos: TfrmRelAbastecimentos
       object RLDBResult1: TRLDBResult
         Left = 616
         Top = 8
-        Width = 100
+        Width = 87
         Height = 16
         DataField = 'VALOR'
         DataSource = frmFiltroRelAbastecimentos.dtsListarAbastecimentosPorDatas
