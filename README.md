@@ -1,10 +1,10 @@
 <h1 align="center">    
-    <p>VendaMais</p>
+    <p>Projeto Posto ABC</p>
     <img src="./Imagens/tela_01.png"/>    
 	</br></br>    
     <img src="./Imagens/tela_02.png"/>		
 	</br></br>
-    <img src="./Imagens/tela_02.png"/>
+    <img src="./Imagens/tela_03.png"/>
 	</br></br>    
     <img src="./Imagens/tela_04.png"/>
 </h1>
