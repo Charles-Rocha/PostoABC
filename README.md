@@ -20,6 +20,8 @@
 
 **Teste prático para Analista Desenvolvedor Delphi**, sistema para gerenciar os abastecimentos e tanques de combustíveis do posto ABC.
 
+**Tempo total de desenvolvimento do projeto:** 8 horas.
+
 ## 🛠 Ferramentas
 
 - [Delphi 12](https://www.embarcadero.com/br/)
