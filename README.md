@@ -25,11 +25,9 @@
 ## 🛠 Ferramentas
 
 - [Delphi 12](https://www.embarcadero.com/br/)
-- [Delphi Horse](https://github.com/HashLoad/horse)
 - [FortesReport](https://github.com/fortesinformatica/fortesreport-ce)
 - [Firebird](https://www.firebirdsql.org/)
 - [Git](https://git-scm.com/)
-- [Horse](https://github.com/HashLoad/horse)
 - [Tortoise Git](https://tortoisegit.org/)
 
 ## 💡 Funcionalidades
