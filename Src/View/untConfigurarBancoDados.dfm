@@ -179,7 +179,7 @@ object frmConfigurarBancoDados: TfrmConfigurarBancoDados
       Images = ImageList1
       ParentFont = False
       ParentShowHint = False
-      RightButton.Hint = 'Listar Ativos'
+      RightButton.Hint = 'Configurar arquivo de banco de dados'
       RightButton.ImageIndex = 0
       RightButton.Visible = True
       ShowHint = True

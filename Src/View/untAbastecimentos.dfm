@@ -325,7 +325,7 @@
       CalendarHeaderInfo.Font.Style = []
       CalendarHeaderInfo.FontColor = 10774084
       Color = clWhite
-      DisabledColor = clLightcoral
+      DisabledColor = 2828005
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clGray
       Font.Height = -12
@@ -374,7 +374,6 @@
     end
   end
   inherited dtsDBGrid: TDataSource
-    DataSet = DM.qryAbastecimentos
     Left = 32
     Top = 448
   end

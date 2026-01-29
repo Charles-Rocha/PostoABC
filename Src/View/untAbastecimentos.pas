@@ -324,14 +324,14 @@ var
   sErro: string;
   CurrentRecord: TBookMark;
 begin
-  CurrentRecord := dbgBaseCadastro.DataSource.DataSet.GetBookmark;
-
   if DM.mtAbastecimentos.Active then
     DM.mtAbastecimentos.EmptyDataSet;
 
   DM.mtAbastecimentos.Close;
   ListarAbastecimentos(DM.mtAbastecimentos, sErro);
   dtsDBGrid.DataSet := DM.mtAbastecimentos;
+
+  CurrentRecord := dbgBaseCadastro.DataSource.DataSet.GetBookmark;
 
   DM.mtAbastecimentos.AfterScroll := OnAfterScrollAbastecimentos;
   DM.mtAbastecimentos.FieldByName('PRECO_COMBUSTIVEL').OnGetText := OnPrecoCombustivelGetText;

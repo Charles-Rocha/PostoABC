@@ -135,7 +135,7 @@ begin
   result := true;
   try
     qry := TFDQuery.Create(nil);
-    qry.Connection := DM.FDConnection1;
+    qry.Connection := Model.Connection.FConnection;
 
     with qry do
       begin
@@ -172,7 +172,7 @@ begin
   result := true;
   try
     qry := TFDQuery.Create(nil);
-    qry.Connection := DM.FDConnection1;
+    qry.Connection := Model.Connection.FConnection;
 
     with qry do
       begin
@@ -209,7 +209,7 @@ var
 begin
   try
     qry := TFDQuery.Create(nil);
-    qry.Connection := DM.FDConnection1;
+    qry.Connection := Model.Connection.FConnection;
 
     with qry do
       begin

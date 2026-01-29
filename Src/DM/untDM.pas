@@ -10,9 +10,7 @@ uses
 
 type
   TDM = class(TDataModule)
-    qryAbastecimentos: TFDQuery;
     mtAbastecimentos: TFDMemTable;
-    FDConnection1: TFDConnection;
     mtBombas: TFDMemTable;
     mtTanques: TFDMemTable;
     mtCombustiveis: TFDMemTable;

@@ -22,8 +22,6 @@ object frmFiltroRelAbastecimentos: TfrmFiltroRelAbastecimentos
     Align = alClient
     BevelInner = bvLowered
     TabOrder = 0
-    ExplicitWidth = 273
-    ExplicitHeight = 105
     object Label1: TLabel
       Left = 133
       Top = 28
@@ -75,7 +73,7 @@ object frmFiltroRelAbastecimentos: TfrmFiltroRelAbastecimentos
       CalendarHeaderInfo.Font.Style = []
       CalendarHeaderInfo.FontColor = 10774084
       Color = clWhite
-      DisabledColor = 2278143
+      DisabledColor = 2828005
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clGray
       Font.Height = -12
@@ -105,7 +103,7 @@ object frmFiltroRelAbastecimentos: TfrmFiltroRelAbastecimentos
       CalendarHeaderInfo.Font.Style = []
       CalendarHeaderInfo.FontColor = 10774084
       Color = clWhite
-      DisabledColor = 2278143
+      DisabledColor = 2828005
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clGray
       Font.Height = -12

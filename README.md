@@ -34,6 +34,7 @@
 ## 💡 Funcionalidades
 
 - **Banco de Dados/Configurar...**: Abre a tela de configuração do arquivo **postoabc_config.ini**. Esse arquivo deve ficar na pasta **Config** na raíz do programa.
+  - **OBS.:** Antes de realizar qualquer ação no programa, certifique-se de que o campo **Base de Dados** esteja apontando para o seu arquivo de banco de dados.
 
 - **Abastecimentos**: Tela para cadastro dos **abastecimentos** realizados no dia.
   - **OBS.:** Nessa tela é necessário preencher apenas os campos **Data**, **Bomba** e **Qtd. Litros**, os demais campos são preenchidos e/ou calculados atutomaticamente.
