@@ -54,6 +54,6 @@ object DM: TDM
     UpdateOptions.CheckRequired = False
     UpdateOptions.AutoCommitUpdates = True
     Left = 184
-    Top = 73
+    Top = 72
   end
 end

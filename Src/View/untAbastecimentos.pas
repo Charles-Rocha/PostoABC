@@ -32,7 +32,7 @@ type
     DBLookupComboBoxCombustiveis: TDBLookupComboBox;
     dtsTanques: TDataSource;
     dtsCombustiveis: TDataSource;
-    popDataVenda: TPopupMenu;
+    popDataAbastecimento: TPopupMenu;
     Limpar1: TMenuItem;
     N3: TMenuItem;
     SelecionarDataAtual1: TMenuItem;
@@ -202,7 +202,7 @@ end;
 procedure TfrmAbastecimentos.btnGravarClick(Sender: TObject);
 var
   bResultado: boolean;
-  sDataCompra, sQuantidadeLitros, sPrecoCombustivel, sValor, sErro: string;
+  sData, sQuantidadeLitros, sPrecoCombustivel, sValor, sErro: string;
   dQuantidadeLitros, dPrecoCombustivel, dValor, dValorImposto: double;
   iIdAbastecimento, iIdBomba: integer;
 begin
@@ -210,7 +210,7 @@ begin
     exit;
 
   iIdAbastecimento := DM.mtAbastecimentos.FieldByName('ID').AsInteger;
-  sDataCompra := DateToStr(cdpData.Date);
+  sData := DateToStr(cdpData.Date);
   sQuantidadeLitros := StringReplace(edtQuantidadeLitros.Text, '.', EmptyStr, [rfReplaceAll]);
   dQuantidadeLitros := StrToFloat(sQuantidadeLitros);
   sPrecoCombustivel := StringReplace(edtPrecoCombustivel.Text, '.', EmptyStr, [rfReplaceAll]);
@@ -224,11 +224,11 @@ begin
 
   try
     if FTipoCadastro = eInserir then
-      bResultado := InserirAbastecimento(sDataCompra, dQuantidadeLitros, dPrecoCombustivel, dValor,
+      bResultado := InserirAbastecimento(sData, dQuantidadeLitros, dPrecoCombustivel, dValor,
                                          dValorImposto, iIdBomba, sErro);
 
     if FTipoCadastro = eEditar then
-      bResultado := EditarAbastecimento(iIdAbastecimento, sDataCompra, dQuantidadeLitros,
+      bResultado := EditarAbastecimento(iIdAbastecimento, sData, dQuantidadeLitros,
                                         dPrecoCombustivel, dValor, dValorImposto, iIdBomba, sErro);
     try
       if not bResultado then

@@ -264,7 +264,7 @@
       ParentFont = False
     end
     object edtQuantidadeLitros: TEdit
-      Left = 182
+      Left = 184
       Top = 72
       Width = 170
       Height = 21
@@ -274,7 +274,7 @@
       OnClick = edtQuantidadeLitrosClick
     end
     object edtValor: TEdit
-      Left = 358
+      Left = 360
       Top = 72
       Width = 170
       Height = 21
@@ -333,7 +333,7 @@
       Font.Style = []
       OnCloseUp = cdpDataCloseUp
       ParentFont = False
-      PopupMenu = popDataVenda
+      PopupMenu = popDataAbastecimento
       SelectionColor = clRed
       TabOrder = 0
       TextHint = 'Selecionar'
@@ -389,8 +389,8 @@
     Left = 264
     Top = 448
   end
-  object popDataVenda: TPopupMenu
-    Left = 358
+  object popDataAbastecimento: TPopupMenu
+    Left = 382
     Top = 448
     object Limpar1: TMenuItem
       Caption = 'Limpar'
